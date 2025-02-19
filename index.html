@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compliance Facility Detail</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h1>SXR Compliance Overview</h1>
+
+    <div class="charts">
+      <canvas id="pieChart"></canvas>
+      <canvas id="barChart"></canvas>
+      <div style="flex: auto"></div>
+    </div>
+
+    <input
+      type="text"
+      id="tableFilter"
+      onkeyup="filterTable()"
+      placeholder="Type to filter facilities..."
+    />
+    <div id="main">
+      <table>
+        <thead>
+          <tr>
+            <th>Facility Name</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ADA</th>
+            <th>OSHA</th>
+            <th>Expirience</th>
+            <th>Equipment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr onclick="window.location.href='facility.html?city=Biloxi';">
+            <td>SXR Biloxi</td>
+            <td>Biloxi</td>
+            <td>MS</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="cross">&#10008;</td>
+            <td class="cross">&#10008;</td>
+          </tr>
+          <tr onclick="window.location.href='facility.html?city=Durham';">
+            <td>SXR Durham</td>
+            <td>Durham</td>
+            <td>NC</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>
+          <tr onclick="window.location.href='facility.html?city=Fayetteville';">
+            <td>SXR Fayetteville</td>
+            <td>Fayetteville</td>
+            <td>NC</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>
+          <tr
+            onclick="window.location.href='facility.html?city=Fort Walton Beach';"
+          >
+            <td>SXR Fort Walton Beach</td>
+            <td>Fort Walton Beach</td>
+            <td>FL</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>
+          <tr onclick="window.location.href='facility.html?city=Germantown';">
+            <td>SXR Germantown</td>
+            <td>Germantown</td>
+            <td>TN</td>
+            <td class="check">&#10004;</td>
+            <td class="cross">&#10008;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>
+          <tr onclick="window.location.href='facility.html?city=Tulsa';">
+            <td>SXR Tulsa</td>
+            <td>Tulsa</td>
+            <td>OK</td>
+            <td class="cross">&#10008;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="cross">&#10008;</td>
+          </tr>
+          <tr
+            onclick="window.location.href='facility.html?city=West Des Moines';"
+          >
+            <td>SXR West Des Moines</td>
+            <td>West Des Moines</td>
+            <td>IA</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>
+          <tr
+            onclick="window.location.href='facility.html?city=Winston-Salem';"
+          >
+            <td>SXR Winston-Salem</td>
+            <td>Winston-Salem</td>
+            <td>NC</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      function filterTable() {
+        const filter = document
+          .getElementById("tableFilter")
+          .value.toUpperCase();
+        const rows = document.querySelectorAll("tbody tr");
+
+        rows.forEach((row) => {
+          const text = row.innerText.toUpperCase();
+          row.style.display = text.includes(filter) ? "" : "none";
+        });
+      }
+
+      // Chart.js Pie Chart and Bar Chart
+      const pieCtx = document.getElementById("pieChart").getContext("2d");
+      const barCtx = document.getElementById("barChart").getContext("2d");
+
+      new Chart(pieCtx, {
+        type: "doughnut",
+        data: {
+          labels: ["In Compliance", "Out of Compliance"],
+          datasets: [
+            {
+              data: [24, 8],
+              backgroundColor: ["#4CAF50", "#FF5733"],
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "Compliance Summary",
+            },
+          },
+        },
+      });
+
+      new Chart(barCtx, {
+        type: "bar",
+        data: {
+          labels: ["ADA", "OSHA", "Expirience", "Equipment"],
+          datasets: [
+            // {
+            //   label: "Available",
+            //   data: [6, 6, 5, 5],
+            //   backgroundColor: "#4CAF50",
+            // },
+            {
+              label: "Out of Compliance",
+              data: [1, 2, 1, 3],
+              backgroundColor: "#FF5733",
+            },
+          ],
+        },
+        options: {
+          indexAxis: "y",
+          plugins: {
+            title: {
+              display: true,
+              text: "Compliance Gaps Detail",
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

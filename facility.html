@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facility Compliance Detail</title>
+    <style>
+      #main tr {
+        display: none;
+      }
+      .category > td:nth-child(1) {
+        text-align: left !important;
+      }
+      .L2 > td:nth-child(1) {
+        text-align: left !important;
+        padding-left: 20px !important;
+      }
+      .L3 > td:nth-child(1) {
+        text-align: left !important;
+        padding-left: 50px !important;
+      }
+      #main tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      .category {
+        font-weight: bold;
+        text-align: left;
+      }
+      tr.category,
+      tr.header,
+      tr.show {
+        display: table-row !important;
+        cursor: pointer;
+      }
+      #legend {
+        width: 100%;
+        margin-bottom: 50px;
+        border: 1px solid black;
+      }
+      #legend th{
+        border-bottom: 1px solid black;
+      }
+      #legend * {
+        border: 0;
+        text-align: left;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Facility Compliance Detail</h1>
+    <table id="legend">
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>Compliance Status</th>
+          <th>Completion Tracking</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>962 Tommy Munro Dr,</td>
+          <td>
+            <span class="check">&#10004;</span>
+            In Compliance
+          </td>
+          <td>Reporting Submitted</td>
+        </tr>
+        <tr>
+          <td>Suite B, Biloxi,</td>
+          <td>
+            <span class="cross">&#10008;</span>
+            Out of Compliance
+          </td>
+          <td>Task Due</td>
+        </tr>
+        <tr>
+          <td>MS 39532</td>
+          <td>N/A Not Applicable</td>
+          <td>Task Overdue</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Revision in Progress</td>
+        </tr>
+      </tbody>
+    </table>
+    <table id="main">
+      <tr class="header">
+        <th>Category</th>
+        <th>Compliance Status</th>
+        <th>Completion Tracking</th>
+        <th>Next Task Due</th>
+      </tr>
+      <tr class="category">
+        <td>ADA Compliance</td>
+        <td>&#x2713;</td>
+        <td></td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="L2">
+        <td>Parking</td>
+        <td>&#x2713;</td>
+        <td></td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="L3">
+        <td>Number of Spaces</td>
+        <td>&#x2713;</td>
+        <td>12/15/2024</td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="L3">
+        <td>Signage</td>
+        <td>&#x2713;</td>
+        <td>12/15/2024</td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="L3">
+        <td>Van-Accessible Space</td>
+        <td>&#x2713;</td>
+        <td>12/15/2024</td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="L3">
+        <td>Accessible Route</td>
+        <td>&#x2713;</td>
+        <td>12/15/2024</td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="L2">
+        <td>Ramp</td>
+        <td>&#x2713;</td>
+        <td></td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="L3">
+        <td>Wheelchair Ramp</td>
+        <td>&#x2713;</td>
+        <td>12/15/2024</td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="L3">
+        <td>Ramp Slope</td>
+        <td>&#x2713;</td>
+        <td>12/15/2024</td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="L3">
+        <td>Handrails and Handholds: Available</td>
+        <td>&#x2713;</td>
+        <td>12/15/2024</td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="L3">
+        <td>Handrails and Handholds: Spacing</td>
+        <td>&#x2713;</td>
+        <td>12/15/2024</td>
+        <td>12/31/2025</td>
+      </tr>
+      <tr class="category">
+        <td>OSHA Compliance</td>
+        <td>&#x2713;</td>
+        <td></td>
+        <td>2/28/2025</td>
+      </tr>
+      <tr>
+        <td>Facility Upkeep</td>
+        <td>&#x2713;</td>
+        <td></td>
+        <td>2/28/2025</td>
+      </tr>
+      <tr>
+        <td>Overall Facility Upkeep</td>
+        <td>&#x2713;</td>
+        <td>1/31/2025</td>
+        <td>2/28/2025</td>
+      </tr>
+      <tr class="category">
+        <td>Veteran Experience Compliance</td>
+        <td>&#x2717;</td>
+        <td></td>
+        <td>1/31/2025</td>
+      </tr>
+      <tr>
+        <td>Veteran Records Management</td>
+        <td>&#x2717;</td>
+        <td>12/31/2024</td>
+        <td>1/31/2025</td>
+      </tr>
+      <tr class="category">
+        <td>Equipment / Supplies Compliance</td>
+        <td>&#x2717;</td>
+        <td></td>
+        <td>2/28/2025</td>
+      </tr>
+      <tr>
+        <td>General Exams</td>
+        <td>&#x2717;</td>
+        <td></td>
+        <td>2/28/2025</td>
+      </tr>
+      <tr>
+        <td>Exam Table Sanitation</td>
+        <td>&#x2717;</td>
+        <td>1/31/2025</td>
+        <td>2/28/2025</td>
+      </tr>
+    </table>
+    <script>
+      document.querySelectorAll(".category").forEach(function (row) {
+        row.addEventListener("click", function () {
+          if (this.nextElementSibling.classList.contains("show")) {
+            collapse(this, this.classList[0]);
+          } else {
+            expand(this, this.classList[0]);
+          }
+        });
+      });
+
+      document.querySelectorAll(".L2").forEach(function (row) {
+        row.addEventListener("click", function () {
+          if (this.nextElementSibling.classList.contains("show")) {
+            collapse(this, this.classList[0]);
+          } else {
+            expand(this, this.classList[0]);
+          }
+        });
+      });
+
+      function collapse(element, layer) {
+        let layers = ["category", "L2", "L3"];
+        let collapsing = layers[layers.indexOf(layer) + 1];
+        element = element.nextElementSibling;
+        while (
+          element &&
+          !element.classList.contains(layer) &&
+          !element.classList.contains("category")
+        ) {
+          element.classList.remove("show");
+          element = element.nextElementSibling;
+        }
+      }
+
+      function expand(element, layer) {
+        let layers = ["category", "L2", "L3"];
+        let collapsing = layers[layers.indexOf(layer) + 1];
+        element = element.nextElementSibling;
+        while (
+          element &&
+          !element.classList.contains(layer) &&
+          !element.classList.contains("category")
+        ) {
+          if (element.classList.contains(collapsing)) {
+            element.classList.add("show");
+          }
+          element = element.nextElementSibling;
+        }
+      }
+    </script>
+  </body>
+</html>
