@@ -1,0 +1,129 @@
+{
+  "ADA Compliance": {
+    "Parking": [
+      "Number of Spaces",
+      "Signage",
+      "Van-Accessible Space",
+      "Accessible Route"
+    ],
+    "Ramp": [
+      "Wheelchair Ramp",
+      "Ramp Slope",
+      "Handrails and Handholds: Available",
+      "Handrails and Handholds: Spacing"
+    ],
+    "Building Entrance Door": [
+      "Building Door Width",
+      "Building Threshold",
+      "Building Doorknobs"
+    ],
+    "Elevator": [
+      "Floor Location of Suite",
+      "Elevator Available",
+      "Elevator Door Width",
+      "Elevator Internal Turning Space"
+    ],
+    "Suite Entrance Door": [
+      "Suite Door Width",
+      "Suite Threshold",
+      "Suite Doorknobs"
+    ],
+    "Waiting Room": [
+      "T-Turn Clearance",
+      "Reduced Height Check-In",
+      "Suite Doorknobs"
+    ],
+    "Exam Rooms": [
+      "Exam Room Door Width",
+      "Exam Room Threshold",
+      "Exam Room Doorknobs",
+      "Exam Room T-Turn Clearance",
+      "Accessible Exam Table",
+      "Acessible Diagnostic Equipment",
+      "Exam Room Privacy"
+    ],
+    "Walkways": ["Protruding Objects"],
+    "Restroom": [
+      "Signage",
+      "Restroom Door Width",
+      "Restroom Threshold",
+      "Restroom Doorknobs",
+      "Restroom T-Turn Clearance",
+      "Stall: Rear Grab Bar",
+      "Stall: Side Grab Bar",
+      "Sink: Forward Approach",
+      "Sink: Height"
+    ]
+  },
+  "OSHA Compliance": {
+    "Facility Upkeep": [
+      "Overall Facility Upkeep",
+      "Floors: Dry / Stain Free",
+      "Floors: Safe / Tripping Hazards",
+      "Ceiling Tiles",
+      "Electrical Enclosures",
+      "Pests",
+      "Extermination Program"
+    ],
+    "Exits": [
+      "Stairways Clear and Unblocked",
+      "Evacuation Map",
+      "Clear Exit Routes",
+      "Exit Door Signage",
+      "Exit Door Illumination",
+      "Non-Exit Doorway Markings",
+      "Door Opening Mechanism",
+      "Door Opening Mechanism"
+    ],
+    "Fire Extinguishers": [
+      "Signage",
+      "Mounting",
+      "Annual Maintenance",
+      "Monthly Visual Inspection"
+    ],
+    "First Aid and Safety": [
+      "First Aid Kit",
+      "Bloodborne Pathogen Spill Kit",
+      "Biohazard Waste Disposal",
+      "Sharps Container",
+      "Needle Stick Log",
+      "SDS Sheets",
+      "Hand Sanitation Protocol"
+    ]
+  },
+  "Veteran Experience Compliance": {
+    "Clinic Signage":[],
+    "Crisis Line":[],
+    "Veteran Records Management":[],
+    "Clinic Furniture":[]
+  },
+  "Equipment / Supplies Compliance": {
+    "General Exams": [
+      "Single Use PPE",
+      "Exam Table Sanitation",
+      "Exam Room Medical Supplies",
+      "Medical Instrumentation"
+    ],
+    "Audiology": [
+      "Sound Booth",
+      "Equipment Calibration",
+      "Ear Curettes",
+      "Other Audiology Supplies"
+    ],
+    "Opto": ["Tonometer", "Visual Field Perimeters", "Slit Lamp"],
+    "Dental": ["Dentist Chair", "Dental Mirrors"],
+    "X-Ray": [
+      "Registration",
+      "Inspection / EPE",
+      "Calibration",
+      "Inventory Management Tracking",
+      "Lead Apron Testing",
+      "Compliance Documents",
+      "Quarterly Checklist Compliance",
+      "Dosimeter Monitoring",
+      "Technologist Licensure",
+      "Personnel Competency Tracking",
+      "Training"
+    ]
+  }
+}

@@ -12,6 +12,7 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    border-spacing: 0;
 }
 
 #main th, td {
@@ -73,4 +74,16 @@ body {
     h1{
         text-align: center;
     }
+}
+
+.hred{
+    color: red;
+}
+
+.adr{
+    border-right: 1px solid black !important;
+}
+
+th.adr{
+    font-size: 19px !important;
 }

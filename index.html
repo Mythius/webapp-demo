@@ -31,7 +31,7 @@
             <th>State</th>
             <th>ADA</th>
             <th>OSHA</th>
-            <th>Expirience</th>
+            <th>Experience</th>
             <th>Equipment</th>
           </tr>
         </thead>
@@ -83,6 +83,74 @@
             <td class="check">&#10004;</td>
             <td class="check">&#10004;</td>
           </tr>
+          <tr onclick="window.location.href='facility.html?city=Greenville';">
+            <td>SXR Greenville</td>
+            <td>Greenville</td>
+            <td>NC</td>
+            <td class="check">&#10004;</td>
+           
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>          
+          <tr onclick="window.location.href='facility.html?city=Grover';">
+            <td>SXR Grover</td>
+            <td>Grover</td>
+            <td>NC</td>
+            <td class="check">&#10004;</td>
+           
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>          
+          <tr onclick="window.location.href='facility.html?city=Jacksonville';">
+            <td>SXR Jacksonville</td>
+            <td>Jacksonville</td>
+            <td>NC</td>
+            <td class="check">&#10004;</td>
+           
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>          
+          <tr onclick="window.location.href='facility.html?city=Manhattan';">
+            <td>SXR Manhattan</td>
+            <td>Manhattan</td>
+            <td>KS</td>
+            <td class="check">&#10004;</td>
+           
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="cross">&#10008;</td>
+          </tr>          
+          <tr onclick="window.location.href='facility.html?city=Orlando';">
+            <td>SXR Orlando</td>
+            <td>Orlando</td>
+            <td>FL</td>
+            <td class="check">&#10004;</td>
+           
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>          
+          <tr onclick="window.location.href='facility.html?city=Petersburg';">
+            <td>SXR Petersburg</td>
+            <td>Petersburg</td>
+            <td>VA</td>
+            <td class="check">&#10004;</td>
+            <td class="cross">&#10008;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>          
+          <tr onclick="window.location.href='facility.html?city=SaltLakeCity';">
+            <td>SXR Salt Lake City</td>
+            <td>Salt Lake City</td>
+            <td>UT</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+            <td class="check">&#10004;</td>
+          </tr>
           <tr onclick="window.location.href='facility.html?city=Tulsa';">
             <td>SXR Tulsa</td>
             <td>Tulsa</td>
@@ -93,7 +161,7 @@
             <td class="cross">&#10008;</td>
           </tr>
           <tr
-            onclick="window.location.href='facility.html?city=West Des Moines';"
+            onclick="window.location.href='facility.html?city=WestDesMoines';"
           >
             <td>SXR West Des Moines</td>
             <td>West Des Moines</td>
@@ -140,7 +208,7 @@
           labels: ["In Compliance", "Out of Compliance"],
           datasets: [
             {
-              data: [24, 8],
+              data: [10, 5],
               backgroundColor: ["#4CAF50", "#FF5733"],
             },
           ],
@@ -158,7 +226,7 @@
       new Chart(barCtx, {
         type: "bar",
         data: {
-          labels: ["ADA", "OSHA", "Expirience", "Equipment"],
+          labels: ["ADA", "OSHA", "Experience", "Equipment"],
           datasets: [
             // {
             //   label: "Available",
