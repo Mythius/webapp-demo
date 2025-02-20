@@ -78,3 +78,11 @@ body {
 .hred{
     color: red;
 }
+
+.adr{
+    border-right: 1px solid black !important;
+}
+
+th.adr{
+    font-size: 19px !important;
+}
