@@ -289,7 +289,7 @@ function makeSection(
         ${getStatus(checked)}
         <td class="${checked=='ý'?'hred':''}">${switchIfColor(text)}</td>
         <td class="${date.includes('28')||checked=='ý'?'hred':''}">${date}</td>
-    <td>
+    </tr>
     `;
 }
 
@@ -305,7 +305,7 @@ function makeSubection2(
         ${getStatus(checked)}
         <td class="${checked=='ý'?'hred':''}">${text}</td>
         <td class="${date.includes('28')||checked=='ý'?'hred':''}">${date}</td>
-    <td>
+    </tr>
     `;
 }
 
