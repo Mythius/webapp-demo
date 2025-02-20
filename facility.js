@@ -145,9 +145,9 @@ Building Threshold,þ,12/15/2024,12/31/2025
 Building Doorknobs,þ,12/15/2024,12/31/2025
 Elevator,þ,green,12/31/2025
 Floor Location of Suite,Ground Floor,12/15/2024,12/31/2025
-Elevator Available,N/A,12/31/2025
-Elevator Door Width,N/A,12/31/2025
-Elevator Internal Turning Space,N/A,12/31/2025
+Elevator Available,N/A,,12/31/2025
+Elevator Door Width,N/A,,12/31/2025
+Elevator Internal Turning Space,N/A,,12/31/2025
 Suite Entrance Door,þ,green,12/31/2025
 Suite Door Width,þ,12/15/2024,12/31/2025
 Suite Threshold,þ,12/15/2024,12/31/2025
