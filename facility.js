@@ -162,7 +162,7 @@ Exam Room Threshold,þ,12/15/2024,12/31/2025
 Exam Room Doorknobs,þ,12/15/2024,12/31/2025
 Exam Room T-Turn Clearance,þ,12/15/2024,12/31/2025
 Accessible Exam Table,þ,12/15/2024,12/31/2025
-Acessible Diagnostic Equipment,N/A,12/31/2025
+Acessible Diagnostic Equipment,N/A,,12/31/2025
 Exam Room Privacy,þ,12/15/2024,12/31/2025
 Walkways,þ,green,12/31/2025
 Protruding Objects,þ,12/15/2024,12/31/2025
@@ -210,12 +210,12 @@ Hand Sanitation Protocol,þ,12/31/2024,3/31/2025
 Veteran Experience Compliance,ý,red,1/31/2025
 Clinic Signage,þ,12/31/2024,3/31/2025
 Crisis Line,þ,12/31/2024,3/31/2025
-Veteran Records Management,ý,2/31/2024,1/31/2025
+Veteran Records Management,ý,12/31/2024,1/31/2025
 Clinic Furniture,þ,12/31/2024,3/31/2025
 Equipment / Supplies Compliance,ý,blue,2/28/2025
 General Exams,ý,blue
 Single Use PPE,þ,1/31/2025,2/28/2025
-Exam Table Sanitation,ý,/31/2025,2/28/2025
+Exam Table Sanitation,ý,1/31/2025,2/28/2025
 Exam Room Medical Supplies,þ,1/31/2025,2/28/2025
 Medical Instrumentation,þ,1/31/2025,2/28/2025
 Audiology,N/A,N/A,N/A
